@@ -1,0 +1,20 @@
+service: lambda-crud-function
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: '20201221'
+  profile: serverless-framework
+  region: ap-southeast-1
+
+functions:
+  createEmployee:
+    handler: ./functions/createEmployee.handler
+    events:
+      - httpApi:
+          path: /employees
+          method: post

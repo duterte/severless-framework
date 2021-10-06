@@ -1,0 +1,16 @@
+{
+  "name": "lambda-crud-function",
+  "version": "1.0.0",
+  "description": "Lambda shadow project",
+  "main": "index.js",
+  "author": "German Ochea",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4",
+    "serverless-offline": "^8.2.0"
+  }
+}

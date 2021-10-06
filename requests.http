@@ -1,0 +1,10 @@
+
+
+###
+POST http://localhost:3000/employees?LIMIT=1&MIN=2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "German",
+  "lastName": "Ochea"
+}
