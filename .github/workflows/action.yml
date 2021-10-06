@@ -10,3 +10,11 @@ jobs:
     steps:
       - name: check out on repository code
         uses: actions/checkout@v2
+      - name: install NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install Dependencies
+        run: npm install
+      - name: Run test
+        run: npm run test
